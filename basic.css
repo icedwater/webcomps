@@ -1,0 +1,44 @@
+/* messing around with webcomponents */
+/* basic.css - styling custom elements */
+
+/* basic reset */
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* underlying styles */
+html {
+    font-size: 14pt;
+    padding: 2em;
+}
+
+body {
+    background-color: rgb(240, 225, 234);
+    color: rgb(48, 64, 32);
+}
+
+p {
+    border: 1px solid blue;
+}
+
+p[is=add-smiley] {
+    border: 3px solid green;
+    padding: 3em;
+}
+
+smiley-emoji ::before {
+    content: "<<<<";
+}
+
+smiley-emoji ::after {
+    content: ">>>>";
+}
+
+hello-world {
+    color: red;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
